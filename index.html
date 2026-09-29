@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lior Katz | Manual QA</title>
-<meta name="description" content="Portfolio of Lior Katz, hands-on Manual QA engineer and QA team lead.">
+<title>Lior Katz | Hands-On Manual QA Engineer</title>
+<meta name="description" content="Lior Katz's hands-on Manual QA portfolio: anonymized case studies in complex business systems, API testing, SQL investigation and release validation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -74,6 +74,13 @@ h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:14px}
 .chip{font-size:.8rem;font-weight:600;padding:2px 11px;border-radius:99px;background:var(--beige);color:var(--brown)}
 .chip.ph{background:#f5e2ad;color:#6b4b0a}
 .proj a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--terra);align-self:flex-start}
+.proj details{border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.proj summary{cursor:pointer;color:var(--terra);font-weight:700;list-style:none}
+.proj summary::-webkit-details-marker{display:none}
+.proj summary::after{content:" +"}
+.proj details[open] summary::after{content:" −"}
+.proj details h4{font-size:.86rem;margin:16px 0 3px;color:var(--olive)}
+.proj details p{font-size:.91rem}
 
 .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
@@ -114,14 +121,12 @@ footer{background:var(--brown);color:var(--beige);padding:28px 0;font-size:.92re
     <svg class="leaf a" viewBox="0 0 200 200" aria-hidden="true"><path fill="currentColor" d="M100 190C30 150 10 80 60 20c40 20 80 50 60 120-4 20-10 36-20 50z"/><path stroke="#f7eddc" stroke-width="3" fill="none" d="M100 190C90 130 80 80 60 30"/></svg>
     <svg class="leaf b" viewBox="0 0 200 200" aria-hidden="true"><path fill="currentColor" d="M100 190C30 150 10 80 60 20c40 20 80 50 60 120-4 20-10 36-20 50z"/></svg>
     <div class="wrap">
-      <div class="label">Hands-on QA</div>
+      <div class="label">Lior Katz · Hands-On Manual QA Engineer</div>
       <h1>Quality in <em>real use.</em></h1>
-      <p class="lead">Manual QA engineer with about four years of experience, leading a team of five. Looking for a full-time role in the Center and Sharon area.</p>
+      <p class="lead">Nearly four years of hands-on QA across complex business systems, Web, Mobile, API and data. Curiosity to explore. Judgment to ensure quality. I’m looking for my next hands-on QA role.</p>
       <div class="btns">
         <a class="btn main" href="#work">View my work
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn alt" href="cv.pdf" download>Download CV
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
       </div>
     </div>
   </div>
@@ -130,12 +135,12 @@ footer{background:var(--brown);color:var(--beige);padding:28px 0;font-size:.92re
     <div class="wrap">
       <div class="label dark">About</div>
       <h2>Details are the job.</h2>
-      <p class="intro">I write test scenarios, run them, report bugs clearly and make sure they are really fixed. I work on a large operational system and lead a team of five testers. I also teach myself AI tools that make testing faster.</p>
-      <p class="intro">This October I start a B.Sc. in Information Systems (cybersecurity) at the Tel Aviv-Yaffo Academic College, in the evening program.</p>
+      <p class="intro">I turn requirements and business logic into meaningful test coverage, find edge cases, and investigate unexpected behavior across UI, API, SQL and logs. I consider how a change affects an entire workflow and its connected systems.</p>
+      <p class="intro">I was promoted to lead up to five testers while continuing hands-on testing. That experience strengthened my ownership and collaboration; my focus here is the practical QA work I love.</p>
       <div class="facts">
-        <div class="fact"><b>About 4 years</b><span>in software testing</span></div>
-        <div class="fact"><b>Team of 5</b><span>hands-on QA lead</span></div>
-        <div class="fact"><b>Cybersecurity</b><span>degree starting October 2026</span></div>
+        <div class="fact"><b>Nearly 4 years</b><span>of hands-on software QA</span></div>
+        <div class="fact"><b>Up to 5</b><span>testers led while staying hands-on</span></div>
+        <div class="fact"><b>2× recognized</b><span>as an Outstanding Employee</span></div>
       </div>
     </div>
   </section>
@@ -143,26 +148,41 @@ footer{background:var(--brown);color:var(--beige);padding:28px 0;font-size:.92re
   <section id="work" class="alt">
     <div class="wrap">
       <div class="label dark">Work</div>
-      <h2>Selected projects</h2>
-      <p class="intro">Each project links to a repository with the full test documents.</p>
+      <h2>Selected work</h2>
+      <p class="intro">Anonymized case studies from my professional QA work.</p>
       <div class="projects">
         <article class="proj">
-          <h3>Project one</h3>
-          <p>Two sentences: what you tested, what the goal was and what you found. Replace this text with yours.</p>
-          <div class="chips"><span class="chip ph">Placeholder</span><span class="chip">Test plan</span><span class="chip">Test cases</span></div>
-          <a href="https://github.com/LiorKatz1">Open repository</a>
+          <h3>Complex Operational Workflow</h3>
+          <p>I owned QA for an automated authorization workflow, building coverage from scratch across state changes, dependent entities and live schedule changes. Testing uncovered defects and undefined business rules that led to clearer requirements.</p>
+          <div class="chips"><span class="chip">Test design</span><span class="chip">API</span><span class="chip">SQL</span></div>
+          <details><summary>Read case study</summary>
+            <h4>Context</h4><p>An automated authorization process connected sequential operational entities, real-time events, schedules and system states. I was its primary QA owner.</p>
+            <h4>Challenge</h4><p>The core flow was documented, but many combinations arising in real operations were still undefined.</p>
+            <h4>My approach</h4><p>I built scenario coverage from scratch, tested state transitions and event sequences, explored dependent entities and schedule changes during active processes, simulated events with predefined API requests, and checked UI behavior and data with SQL.</p>
+            <h4>Impact</h4><p>My testing exposed defects and edge cases. Questions I raised with System Analysts helped refine business rules and the feature specification.</p>
+          </details>
         </article>
         <article class="proj">
-          <h3>Project two</h3>
-          <p>A short description of the second project and the result. Replace this text with yours.</p>
-          <div class="chips"><span class="chip ph">Placeholder</span><span class="chip">Bug reports</span></div>
-          <a href="https://github.com/LiorKatz1">Open repository</a>
+          <h3>Cross-System Impact Analysis</h3>
+          <p>I tested a nightly process that updated operational entities by status and effective date. I mapped dependencies and designed combinations to catch effects beyond the changed feature.</p>
+          <div class="chips"><span class="chip">Integration</span><span class="chip">Regression</span><span class="chip">Risk analysis</span></div>
+          <details><summary>Read case study</summary>
+            <h4>Context</h4><p>A scheduled process updated operational entities according to status and effective dates.</p>
+            <h4>Challenge</h4><p>One update could affect operational segments, schedules, active processes and dependent business objects.</p>
+            <h4>My approach</h4><p>I mapped the relationships between affected areas and designed tests combining statuses, dates, active dependencies and restrictions. I included regression checks for connected workflows.</p>
+            <h4>Impact</h4><p>The resulting coverage accounted for possible effects on existing operational data beyond the process itself.</p>
+          </details>
         </article>
         <article class="proj">
-          <h3>Project three</h3>
-          <p>A short description of the third project and the result. Replace this text with yours.</p>
-          <div class="chips"><span class="chip ph">Placeholder</span><span class="chip">Exploratory</span></div>
-          <a href="https://github.com/LiorKatz1">Open repository</a>
+          <h3>A Regression Caught Before Release</h3>
+          <p>During release validation, I tested beyond the immediate change and found an interaction with schedule processing that created invalid operational time data. The release went ahead after the issue was fixed and retested.</p>
+          <div class="chips"><span class="chip">Regression</span><span class="chip">Release validation</span></div>
+          <details><summary>Read case study</summary>
+            <h4>Context</h4><p>I was validating a release involving a change to a connected operational system.</p>
+            <h4>Challenge</h4><p>A problem outside the immediate change could still compromise operational data.</p>
+            <h4>My approach</h4><p>I expanded regression checks to related schedule processing and identified invalid time data.</p>
+            <h4>Impact</h4><p>The deployment was stopped, the defect was fixed, and I retested the affected flow before the release proceeded.</p>
+          </details>
         </article>
       </div>
     </div>
@@ -172,13 +192,35 @@ footer{background:var(--brown);color:var(--beige);padding:28px 0;font-size:.92re
     <div class="wrap">
       <div class="label dark">Skills</div>
       <h2>How I work</h2>
-      <p class="intro">The process, the tools and what I keep learning.</p>
+      <p class="intro">From understanding the business rule to validating a confident release.</p>
       <div class="skills">
-        <div class="skill"><h3>Testing process</h3><ul><li>Test plans and test cases</li><li>Exploratory, regression and smoke testing</li><li>Clear bug reports and follow-up</li></ul></div>
-        <div class="skill"><h3>Tools</h3><ul><li>Jira <span class="chip ph">edit your list</span></li><li>Postman</li><li>Excel, Notion, GitHub</li></ul></div>
-        <div class="skill"><h3>Leadership</h3><ul><li>Leading a team of five testers</li><li>Planning and prioritising tasks</li><li>Working with development and operations</li></ul></div>
-        <div class="skill"><h3>Learning</h3><ul><li>AI tools for QA work</li><li>B.Sc. in Information Systems, cybersecurity</li></ul></div>
+        <div class="skill"><h3>Understand</h3><p>I analyze requirements, business logic, dependencies and expected behavior.</p></div>
+        <div class="skill"><h3>Design</h3><p>I turn the logic into scenarios, state transitions, edge cases and negative paths.</p></div>
+        <div class="skill"><h3>Investigate</h3><p>I trace unexpected behavior through the UI, API, SQL, logs and data.</p></div>
+        <div class="skill"><h3>Deliver</h3><p>I verify fixes, assess regression impact and support release validation.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="alt" id="tools">
+    <div class="wrap">
+      <div class="label dark">Skills &amp; Tools</div>
+      <h2>Tools I actually use.</h2>
+      <div class="skills">
+        <div class="skill"><h3>Testing</h3><p>Functional · Regression · Integration · E2E · Web · Mobile</p></div>
+        <div class="skill"><h3>Data</h3><p>SQL · SSMS · BI testing · Data validation</p></div>
+        <div class="skill"><h3>QA tools</h3><p>Azure DevOps / TFS · TestRail · Jira · Postman · SOAP UI · Wireshark · Chrome DevTools</p></div>
+        <div class="skill"><h3>Documentation &amp; technical</h3><p>STD · Test cases · JSON · XML</p></div>
+        <div class="skill"><h3>AI tools</h3><p>Basic familiarity with ChatGPT, Claude and Gemini as aids for exploring ideas and reviewing test scenarios.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beyond">
+    <div class="wrap">
+      <div class="label dark">Beyond QA</div>
+      <h2>Always curious.</h2>
+      <p class="intro">Away from testing, I love cooking, trying new recipes and spending time with my dog Leo. In October 2026, I’m starting an evening B.Sc. program in Information Systems with a Cybersecurity specialization.</p>
     </div>
   </section>
 
@@ -186,16 +228,15 @@ footer{background:var(--brown);color:var(--beige);padding:28px 0;font-size:.92re
     <div class="wrap">
       <div class="label dark">Contact</div>
       <h2>Let's talk.</h2>
-      <p>I am looking for a full-time QA position in the Center and Sharon area. I would be glad to hear from you.</p>
+      <p>I’m looking for my next hands-on QA role. Based in Hod Hasharon, Israel, I’d be glad to connect.</p>
       <div class="links">
-        <a class="btn main" href="mailto:your@email.com">your@email.com</a>
-        <a class="btn alt" href="https://www.linkedin.com/in/">LinkedIn</a>
+        <a class="btn main" href="mailto:Lior2058@gmail.com">Lior2058@gmail.com</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap">Lior Katz, Manual QA</div></footer>
+<footer><div class="wrap">Lior Katz · Hands-On Manual QA Engineer</div></footer>
 
 </body>
 </html>
