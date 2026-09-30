@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#161a16">
 <title>Lior Katz | Hands-On Manual QA Engineer</title>
 <meta name="description" content="Portfolio of Lior Katz, Hands-On Manual QA Engineer with almost four years of experience testing complex business systems.">
 <script>
 document.documentElement.classList.add('js');
-(function(){var t;try{t=localStorage.getItem('lk-theme')}catch(e){}
-document.documentElement.dataset.theme=t||'dark';})();
+document.documentElement.dataset.theme='dark';
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f8f4ec;--bg2:#e9eee6;--card:#fffdf8;--ink:#1f1d1a;--soft:#5d5a51;--green:#405a45;--btn:#405a45;--btntx:#f8f4ec;--sage:#819782;--terra:#b8603f;--mustard:#d9a93f;--line:#dcd6c8;--fade:248,244,236;--chip:#e9eee6;--ph:#f5e2ad;--phtx:#6b4b0a}
-[data-theme="dark"]{--bg:#161a16;--bg2:#1d231d;--card:#222922;--ink:#f1ede3;--soft:#b9bfb2;--green:#a9c2ab;--btn:#4f7256;--btntx:#f8f4ec;--sage:#819782;--terra:#e08a6b;--mustard:#e3b850;--line:#303a30;--fade:22,26,22;--chip:#2b352b;--ph:#5a4713;--phtx:#f3d98a}
+:root,[data-theme="dark"]{--bg:#161a16;--bg2:#1d231d;--card:#222922;--ink:#f1ede3;--soft:#b9bfb2;--green:#a9c2ab;--btn:#4f7256;--btntx:#f8f4ec;--sage:#819782;--terra:#e08a6b;--mustard:#e3b850;--line:#303a30;--fade:22,26,22;--chip:#2b352b;--ph:#5a4713;--phtx:#f3d98a}
+[data-theme="light"]{--bg:#f8f4ec;--bg2:#e9eee6;--card:#fffdf8;--ink:#1f1d1a;--soft:#5d5a51;--green:#405a45;--btn:#405a45;--btntx:#f8f4ec;--sage:#819782;--terra:#b8603f;--mustard:#d9a93f;--line:#dcd6c8;--fade:248,244,236;--chip:#e9eee6;--ph:#f5e2ad;--phtx:#6b4b0a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.7;font-size:17px;transition:background .3s,color .3s}
@@ -93,6 +94,8 @@ h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:12px}
 .pan .in2{padding:0 20px 18px;color:var(--soft);font-size:.97rem}
 .pan p{margin:0 0 8px}.pan b{color:var(--ink)}
 .center{text-align:center}
+.cv-cta{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;margin:40px auto 0;padding-top:30px;max-width:420px;border-top:1px solid var(--line)}
+.cv-cta p{margin:0;color:var(--soft);font-size:1.02rem}
 
 /* about: photo stays in place while the text scrolls (desktop) */
 .about-grid{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:64px;align-items:start}
@@ -184,7 +187,6 @@ footer{background:#2b1f15;color:#eddcc0;padding:26px 0;font-size:.92rem}
     <p class="lead rv" style="--d:260ms">Almost four years testing complex business systems across Web, Mobile, API and data. Curiosity to explore. Judgment to ensure quality. Looking for my next hands-on QA role.</p>
     <div class="btns rv" style="--d:340ms">
       <a class="btn main" href="#work">View my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn alt" href="Lior_Katz_QA_CV_EN.pdf" download>Download CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
     </div>
   </div>
 </div>
@@ -214,7 +216,10 @@ footer{background:#2b1f15;color:#eddcc0;padding:26px 0;font-size:.92rem}
     </div>
     <div class="center rv">
       <button class="btn alt" id="moreBtn" type="button" aria-expanded="false">Show earlier roles</button>
-      <p class="note">The full history is in my CV. <a href="Lior_Katz_QA_CV_EN.pdf" download>Download CV (PDF)</a></p>
+      </div>
+    <div class="cv-cta rv">
+      <p>The full history is in my CV.</p>
+      <a class="btn alt" href="Lior_Katz_QA_CV_EN.pdf" download>Download CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
     </div>
   </div>
 </section>
@@ -321,7 +326,6 @@ footer{background:#2b1f15;color:#eddcc0;padding:26px 0;font-size:.92rem}
     <div class="links rv">
       <a class="btn main" href="mailto:Lior2058@gmail.com">Lior2058@gmail.com</a>
       <button class="btn alt" id="copyBtn" type="button">Copy email</button>
-      <a class="btn alt" href="Lior_Katz_QA_CV_EN.pdf" download>Download CV</a>
     </div>
   </div>
 </section>
@@ -338,7 +342,7 @@ function $(s){return d.querySelector(s)}function $$(s){return Array.prototype.sl
 var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 
 /* theme */
-function toggleTheme(){var t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('lk-theme',t)}catch(e){}}
+function toggleTheme(){var t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;}
 $('#themeBtn').onclick=toggleTheme;$('#themeBtn2').onclick=toggleTheme;
 
 /* drawer */
